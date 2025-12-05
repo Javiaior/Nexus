@@ -1,0 +1,21 @@
+{
+  "name": "Nexus Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  "postCreateCommand": "bash .devcontainer/setup-pocketbase.sh",
+
+  "forwardPorts": [8090],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "svelte.svelte-vscode",
+        "eamodio.gitlens",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}
